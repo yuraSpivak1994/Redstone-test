@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="form-container">
+    <h2>Sign in</h2>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <input
+        type="text"
+        [ngClass]="{'has-error': form.get('email').invalid && form.get('email').touched}"
+        placeholder="email"
+        class="form-group"
+        formControlName="email">
+
+      <span
+        class="form-help-text email"
+        *ngIf="form.get('email').invalid && form.get('email').touched"
+      >
+      <span *ngIf="form.get('email')['errors']['required']">Email cannot be empty</span>
+    </span>
+      <input
+        type="password"
+        [ngClass]="{'has-error': form.get('password').invalid && form.get('password').touched}"
+        placeholder="password"
+        class="form-group"
+        formControlName="password">
+      <span
+        class="form-help-text password"
+        *ngIf="form.get('password').invalid && form.get('password').touched">
+      <span *ngIf="form.get('password')['errors']['required']">Password cannot be empty, must contain 8 characters, 1 figure and 1 uppercase</span>
+    </span>
+      <button
+        type="submit"
+        [ngClass]="{'btn-disabled' : form.invalid}">Sign in</button>
+    </form>
+  </div>
+</div>

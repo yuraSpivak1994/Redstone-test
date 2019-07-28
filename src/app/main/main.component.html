@@ -1,0 +1,13 @@
+<header class="container">
+  <nav>
+    <span class="link" routerLinkActive="active" [routerLink]="['/main/table']">Table</span>
+    <span class="link" routerLinkActive="active" [routerLink]="['/main/some']">Some page</span>
+  </nav>
+  <div class="right-box">
+      <img src="../../assets/image/redstone.png"/>
+    <button (click)="logOut()">Logout</button>
+  </div>
+</header>
+<div [@routeAnimations]="prepareRoute(outlet)" >
+  <router-outlet #outlet="outlet"></router-outlet>
+</div>

@@ -1,0 +1,60 @@
+header.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  background: #50d5ff;
+
+  nav {
+    display: flex;
+    width: 50%;
+    justify-content: left;
+    align-items: center;
+
+    .active {
+      color: #ffffa0;
+    }
+
+    span {
+      padding-left: 5%;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        color: #ffffa0;
+        transition: 0.3s;
+      }
+    }
+  }
+
+  .right-box {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: center;
+
+    span, button, img {
+      margin-right: 2%;
+    }
+
+    span {
+      color: #fff;
+    }
+
+    button {
+      padding: 12px 24px;
+      background: #2a99a5;
+
+      &:hover {
+        color: #ffffa0;
+      }
+    }
+
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+  }
+}

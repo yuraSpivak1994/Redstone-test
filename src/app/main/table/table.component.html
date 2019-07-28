@@ -1,0 +1,46 @@
+<div class="topnav">
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input
+        type="text"
+        placeholder="Search.."
+        name="search"
+        [(ngModel)]="userFilter.name">
+    </form>
+  </div>
+</div>
+<div class="table-box">
+  <table id="customers">
+    <tr>
+      <th>
+        <div class="pretty p-default p-fill">
+          <input type="checkbox">
+          <div class="state p-info">
+            <label>Number</label>
+          </div>
+        </div>
+      </th>
+      <th>
+        <div class="pretty p-default p-fill">
+          <input type="checkbox"/>
+          <div class="state p-info">
+            <label>Name</label>
+          </div>
+        </div>
+      </th>
+      <th>
+        <div class="pretty p-default p-fill">
+          <input type="checkbox"/>
+          <div class="state p-info">
+            <label>Email</label>
+          </div>
+        </div>
+      </th>
+    </tr>
+    <tr *ngFor="let user of users | async | filterBy: userFilter">
+      <td [routerLink]="['/main/detail', user.id]" class="active">{{user.id}}</td>
+      <td>{{user.name}}</td>
+      <td>{{user.email}}</td>
+    </tr>
+  </table>
+</div>

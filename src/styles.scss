@@ -1,0 +1,56 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '~pretty-checkbox/src/pretty-checkbox.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+ outline: none;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+    input, span {
+      outline: none;
+    }
+
+  button {
+    border: none;
+    color: #ffff;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-sizing: border-box;
+  }
+  .form-group.has-error, span.has-error {
+    border: 1px solid #f44!important;
+  }
+
+  .form-help-text {
+    color: #f44;
+    display: block !important;
+    width: 100%;
+  }
+
+  .disabled {
+    background-color: #edffff!important;
+    cursor: not-allowed;
+  }
+
+  .btn-disabled {
+    color: black;
+    background-color: lightgray!important;
+    cursor: not-allowed;
+  }
+
+
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

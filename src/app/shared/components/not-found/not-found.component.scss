@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  img {
+    max-width: 820px;
+  }
+
+  span {
+    font-size: 18px;
+    color: #ff6071;
+  }
+  h1 {
+    color: red;
+  }
+
+  button{
+    padding: 12px 24px;
+    margin-top: 10px;
+    background: #ff4444;
+
+    &:hover {
+      color: #edffff;
+    }
+  }
+}

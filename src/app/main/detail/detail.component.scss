@@ -1,0 +1,26 @@
+main {
+
+  section.post-info {
+    margin: 15px auto;
+    max-width: 400px;
+    font-size: 17px;
+
+    ul {
+      background: #f6f6f6;
+      padding: 10px;
+      -webkit-box-shadow: -7px 6px 14px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: -7px 6px 14px 0px rgba(0,0,0,0.75);
+      box-shadow: -7px 6px 14px 0px rgba(0,0,0,0.75);
+
+      li {
+        margin: 3px 0 3px 0;
+        list-style: none;
+        padding: 10px 0;
+      }
+    }
+  }
+  span {
+    font-weight: bold;
+  }
+}
+

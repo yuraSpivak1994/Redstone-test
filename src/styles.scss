@@ -6,10 +6,6 @@
   padding: 0;
 }
 
-button {
- outline: none;
-}
-
 body {
   font-family: 'Open Sans', sans-serif;
     input, span {
@@ -27,6 +23,7 @@ body {
     cursor: pointer;
     transition: 0.3s;
     box-sizing: border-box;
+    outline: none;
   }
   .form-group.has-error, span.has-error {
     border: 1px solid #f44!important;
@@ -48,9 +45,5 @@ body {
     background-color: lightgray!important;
     cursor: not-allowed;
   }
-
-
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
